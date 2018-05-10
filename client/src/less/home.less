@@ -1,0 +1,50 @@
+#wa_home_pulp_panel {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    >div:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 80vh;
+    }
+}
+
+#wa_home_static_7day_container, #wa_home_static_24hour_container {
+    width: 40vw;
+    height: 300px;
+}
+
+#wa_home_ip_map_container {
+    width: 40vw;
+    height: 80vh;
+}
+
+#wa_home_navbar_subnav {
+    display: flex;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 2rem;
+
+    div {
+        border-top: 1px solid #aaa;
+        border-left: 1px solid #aaa;
+        border-right: 1px solid #aaa;
+        border-top-left-radius: .7rem;
+        border-top-right-radius: .7rem;
+        padding: .7rem 1rem;
+        margin: 0 1rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &.wa-home-submenu-select {
+            color: white;
+            background: skyblue;
+        }
+    }
+
+}

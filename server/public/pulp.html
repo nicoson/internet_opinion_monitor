@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base target="_blank" />
+    <title>pulp</title>
+    <link rel="stylesheet" href="./stylesheet/common.css">
+    <link rel="stylesheet" href="./stylesheet/home.css">
+    <!-- <link rel="stylesheet" href="./libs/css/bootstrap.min.css"> -->
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/imgs/qiniulogo.png" alt="">
+            <p>互联网网情信息预警系统</p>
+        </div>
+        <div id="wa_home_navbar">
+            <a href="/home.html" target="_self">综合信息平台</a>
+            <a class="wa-home-nav-selected" href="/pulp.html" target="_self">涉黄信息</a>
+            <a href="/terror.html" target="_self">涉暴信息</a>
+            <a href="/terrordetect.html" target="_self">涉暴信息(检测)</a>
+            <a href="/politician.html" target="_self">涉政信息</a>
+        </div>
+    </header>
+    <section>
+        <div id="wa_filter_panel">
+            <fieldset>
+                <legend>日期范围:</legend>
+                <div>从<input id="wa_filter_input_datetime_start" type="date" /></div><br/>
+                <div>到<input id="wa_filter_input_datetime_end" type="date" /></div>
+            </fieldset>
+            <fieldset>
+                <legend>置信区间:</legend>
+                <form id="wa_filter_input_score_range_form" oninput="wa_range_score.value=parseFloat(wa_range_choose.value)*100">
+                    <output for="wa_filter_input_score_range" name='wa_range_score' value="99">99</output>% - 100%
+                    <div>
+                        90%<input id="wa_filter_input_score_range" name="wa_range_choose" type="range" min="0.9" max="1" step="0.01" value="0.99" ／>100%
+                    </div>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>结果类别:</legend>
+                <table>
+                    <tr>
+                        <td><label for=""><input id="wa_filter_input_cate_pulp" type="checkbox" checked disabled>黄色淫秽</label></td>
+                    </tr>
+                </table>
+                
+            </fieldset>
+            <button id="wa_filter_panel_submit" class="wa-btn-success">筛选</button>
+        </div>
+        <table id="wa_home_tablelist">
+            <tr>
+                <th>序号</th>
+                <th>上传日期</th>
+                <th>截图</th>
+                <th>评测结果</th>
+                <th>置信度</th>
+                <th>来源</th>
+                <th>链接</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2018-10-10 12:34:56</td>
+                <td><img src="http://oquqvdmso.bkt.clouddn.com/atflow-log-proxy/images/terror-classify-2018-03-04T17-40-47-WFwe_q8lOF4Am4q27BEwug==" alt=""></td>
+                <td>暴力场景</td>
+                <td>99.9%</td>
+                <td>百度</td>
+                <td><a href="">点击打开</a></td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <p>@copy right reserved by Qiniu</p>
+    </footer>
+    
+    <script src="./javascript/config.js"></script>
+    <script src="./javascript/pulp.js"></script>
+</body>
+</html>

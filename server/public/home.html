@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base target="_blank" />
+    <title>互联网网情信息预警系统 - 综合平台</title>
+    <link rel="stylesheet" href="./stylesheet/common.css">
+    <link rel="stylesheet" href="./stylesheet/home.css">
+    <link rel="stylesheet" href="./stylesheet/home_add.css">
+    <!-- <link rel="stylesheet" href="./libs/css/bootstrap.min.css"> -->
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/imgs/qiniulogo.png" alt="">
+            <p>互联网网情信息预警系统</p>
+        </div>
+        <div id="wa_home_navbar">
+            <a class="wa-home-nav-selected" href="/home.html" target="_self">综合信息平台</a>
+            <a href="/pulp.html" target="_self">涉黄信息</a>
+            <a href="/terror.html" target="_self">涉暴信息</a>
+            <a href="/terrordetect.html" target="_self">涉暴信息(检测)</a>
+            <a href="/politician.html" target="_self">涉政信息</a>
+        </div>
+    </header>
+
+    
+    <section>
+        <div id="wa_home_navbar_subnav">
+            <div class="wa-home-submenu-select" data-cate="pulp">涉黄信息统计</div>
+            <div data-cate="terror">涉暴信息统计</div>
+            <div data-cate="terrordetect">涉暴信息统计（检测）</div>
+            <div data-cate="politician">涉政信息统计</div>
+        </div>
+        <h2 id="wa_home_subnav_title">涉黄信息统计：</h2>
+        <div id="wa_home_pulp_panel">
+            <div>
+                <div id="wa_home_static_7day_container"></div>
+                <div id="wa_home_static_24hour_container"></div>
+            </div>
+            <div id="wa_home_ip_map_container"></div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>@copy right reserved by Qiniu</p>
+    </footer>
+
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+    
+    <script src="./javascript/config.js"></script>
+    <script src="//unpkg.com/crypto-js/crypto-js.js"></script>
+    <script src="./javascript/token.js"></script>
+    <script src="./javascript/home.js"></script>
+
+</body>
+</html>
