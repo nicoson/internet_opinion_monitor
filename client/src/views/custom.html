@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base target="_blank" />
+    <title>pulp</title>
+    <link rel="stylesheet" href="./stylesheet/common.css">
+    <link rel="stylesheet" href="./stylesheet/layout.css">
+    <link rel="stylesheet" href="./stylesheet/tablepage.css">
+    <link rel="stylesheet" href="./stylesheet/custom.css">
+    <!-- <link rel="stylesheet" href="./libs/css/bootstrap.min.css"> -->
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/imgs/qiniulogo.png" alt="">
+            <p>互联网网情信息预警系统</p>
+        </div>
+        <div id="wa_home_navbar">
+            <a href="/home.html" target="_self">综合信息平台</a>
+            <a href="/pulp.html" target="_self">涉黄信息</a>
+            <a href="/terror.html" target="_self">涉暴信息</a>
+            <a href="/terrordetect.html" target="_self">涉暴信息(检测)</a>
+            <a href="/politician.html" target="_self">涉政信息</a>
+            <a class="wa-home-nav-selected" href="/custom.html" target="_self">定制服务</a>
+        </div>
+    </header>
+
+    <section>
+        <div id="wa_custom_frontpage">
+            <div>
+                <button id="wa_custom_addjob" class="wa-btn-success wa-custom-buttonmenu">添加定制服务</button>
+            </div>
+
+            <table id="wa_custom_job_table">
+                <tr>
+                    <th>任务ID</th>
+                    <th>任务名称</th>
+                    <th>创建时间</th>
+                    <th>检测范围</th>
+                    <th>关键词</th>
+                    <th>检测类型</th>
+                    <th>任务状态</th>
+                    <th>预警</th>
+                    <th>察看结果</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="wa_custom_setpage" class="wa-hidden">
+            <div>
+                <button id="wa_custom_set_back" class="wa-btn-success wa-custom-buttonmenu">返回</button>
+            </div>
+
+            
+        </div>
+        
+        <div id="wa_custom_detailpage" class="wa-hidden">
+            <div>
+                <button id="wa_custom_detail_back" class="wa-btn-success wa-custom-buttonmenu">返回</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>@copy right reserved by Qiniu</p>
+    </footer>
+    
+    <script src="./javascript/config.js"></script>
+    <script src="./javascript/custom.js"></script>
+    <!-- <script src="./javascript/filtertable.js"></script> -->
+</body>
+</html>

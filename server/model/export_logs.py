@@ -18,9 +18,10 @@ ak = "Sj2l3BjGqs47X7fxS_JtrBIsyn2StiV1RI8dppqR"
 sk = "DXVZR5iqJlHw7EiWTYrsAgmcV4pVrN8Tb0vfO_Lg"
 ak = "F92-G4jA5CkT-eibTAtosv6ETVqhpzaGoVtdsTGM"
 sk = "aCQJhOuPEooQGUV56VB7VH6CPFNCzwWZmhBQkA5i"
-remoteapi = "http://atnet-apiserver.ava-staging.k8s-xs.qiniu.io/"
+# remoteapi = "http://atnet-apiserver.ava-staging.k8s-xs.qiniu.io/"
+remoteapi = "http://atnet-apiserver.ava-staging.ke-xs.cloudappl.com/"
+# remoteapi = "http://atnet-apiserver-internal.ava-staging.k8s-xs.qiniu.io/"
 #remoteapi = "http://atnet-apiserver.ava.k8s-xs.qiniu.io/"
-
 
 def exportlogs(ak,sk,cmd,start_time,end_time,uids=[],
     query="label[?type=='classification' && name=='pulp']",
@@ -63,6 +64,7 @@ def exportlogs(ak,sk,cmd,start_time,end_time,uids=[],
     }
 
     res = requests.post(url,json=content,auth=factory.get_qiniu_auth())
+    # print(res.content)
     ret = json.loads(str(res.content, encoding = "utf8"))
     return ret
 

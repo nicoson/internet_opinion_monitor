@@ -1,11 +1,4 @@
-DATA = {};
-
-
-if(sessionStorage.islogin == undefined || sessionStorage.islogin != 'true') {
-    location.href = '/index.html';
-} else {
-    document.querySelector('section').removeAttribute('class');
-}
+let DATA = {};
 
 window.onload = function() {
     if(APIHOST == undefined) window.APIHOST = '';
