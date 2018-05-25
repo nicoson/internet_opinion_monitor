@@ -52,6 +52,20 @@ router.post('/getdata', function(req, res, next) {
   });
 });
 
+//  post create new job
+let JOBLIST = [];
+router.post('/newjob', function(req, res, next) {
+  console.log(req.body);
+  req.body.job.id = new Date().getTime();
+  JOBLIST.push(req.body.job);
+  res.send(JOBLIST);
+});
+
+//  get jobs
+router.get('/getjobs', function(req, res, next) {
+  res.send(JOBLIST);
+});
+
 //  delete datum
 router.post('/deletedatum', function(req, res, next) {
   console.log(req.body.id, req.body.table);

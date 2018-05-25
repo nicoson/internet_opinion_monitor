@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <base target="_blank" />
-    <title>pulp</title>
+    <title>定制服务</title>
     <link rel="stylesheet" href="./stylesheet/common.css">
     <link rel="stylesheet" href="./stylesheet/layout.css">
     <link rel="stylesheet" href="./stylesheet/tablepage.css">
@@ -48,16 +48,7 @@
                     <th>操作</th>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                 </tr>
             </table>
         </div>
@@ -67,13 +58,95 @@
                 <button id="wa_custom_set_back" class="wa-btn-success wa-custom-buttonmenu">返回</button>
             </div>
 
+            自定义任务名称：<input id="wa_custom_set_taskname" type="text" />
+            <div>
+                <fieldset id="wa_custom_set_target">
+                    <legend>目标范围</legend>
+                    <label for="wa_custom_target_local">
+                        <input id="wa_custom_target_local" type="radio" name="wa_custom_target" data-target="local" checked /> 属地微博
+                    </label>
+                    <label for="wa_custom_target_sina">
+                        <input id="wa_custom_target_sina" type="radio" name="wa_custom_target" data-target="sina" /> 新浪微博
+                    </label>
+                    <label for="wa_custom_target_baidu">
+                        <input id="wa_custom_target_baidu" type="radio" name="wa_custom_target" data-target="baidu" /> 百度
+                    </label>
+                </fieldset>
+
+                <fieldset id="wa_custom_set_keyword">
+                    <legend>关键词</legend>
+                    <input id="wa_custom_set_keyword_input" type="text" placeholder="请输入关键词" />
+                    <p>多关键词逻辑关系:|或、+与、-非,符号必须使用半角</p>
+                </fieldset>
+
+                <fieldset id="wa_custom_set_func">
+                    <legend>功能选择</legend>
+                    <label><input type="checkbox" data-cate="pulp"> 色情检测</label>
+                    <label><input type="checkbox" data-cate="politician"> 涉稳检测</label>
+                    <label><input type="checkbox" data-cate="terror"> 暴恐检测</label>
+                    <label><input type="checkbox" data-cate="compare"> 对比检测</label>
+                    <label><input type="checkbox" data-cate="person"> 定制人物检测</label>
+                </fieldset>
+
+                <fieldset id="wa_custom_set_settings">
+                    <legend>其他设置</legend>
+                    <table>
+                        <tr>
+                            <td>监控时长</td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="1">1天</option>
+                                    <option value="2">2天</option>
+                                    <option value="3">3天</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>数据留存有效期</td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="1">1周</option>
+                                    <option value="2">2周</option>
+                                    <option value="3">3周</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>数据回溯时效期</td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="1">1小时</option>
+                                    <option value="2">2小时</option>
+                                    <option value="3">3小时</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>系统预警方式</td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="1">系统内部</option>
+                                    <option value="2">短信通知</option>
+                                    <option value="3">邮件通知</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
             
+            <div id="wa_custom_set_buttongroup">
+                <button id="wa_custom_set_cancel" class="wa-btn-default">取消</button>
+                <button id="wa_custom_set_submit" class="wa-btn-success">创建</button>
+            </div>
         </div>
         
         <div id="wa_custom_detailpage" class="wa-hidden">
             <div>
                 <button id="wa_custom_detail_back" class="wa-btn-success wa-custom-buttonmenu">返回</button>
             </div>
+
+            <div id="wa_custom_detail_list_container"></div>
         </div>
     </section>
     
@@ -82,6 +155,7 @@
     </footer>
     
     <script src="./javascript/config.js"></script>
+    <script src="./javascript/filtertable.js"></script>
     <script src="./javascript/custom.js"></script>
     <!-- <script src="./javascript/filtertable.js"></script> -->
 </body>
