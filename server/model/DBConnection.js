@@ -182,6 +182,7 @@ DBConn.getSumData = function(table, start, end) {
     let p = new Promise(function(resolve, reject){
         connection.connect();
         //  create pulp table
+        // let sql = `select count(*) as count from ${table} where created_date>='${start}' and created_date<='${end}'`;
         let sql = `select count(*) as count from ${table} where created_date>='${start}' and created_date<='${end}'`;
         //  console.log(sql);
         //  execute query

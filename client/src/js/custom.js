@@ -42,13 +42,13 @@ function fillTable(tmp,data) {
         tmp += `<tr>
                     <td>${datum.id}</td>
                     <td>${datum.taskname}</td>
-                    <td>${datum.created}</td>
+                    <td>${datum.created.slice(0,-5).replace('T',' ')}</td>
                     <td>${datum.target}</td>
                     <td>${datum.keywords}</td>
                     <td>${datum.func}</td>
-                    <td>${'datum.'}</td>
-                    <td>${'datum.'}</td>
-                    <td class="wa-custom-job-table-link" data-id="${datum.id}">${200}</td>
+                    <td>${'运行中'}</td>
+                    <td>${'30'}</td>
+                    <td class="wa-custom-job-table-link" data-id="${datum.id}">${Math.round(Math.random()*100)}</td>
                     <td><button>启动</button><button>删除</button></td>
                 </tr>`
     });
