@@ -19,8 +19,8 @@ class getIP {
     getZone(ip) {
         let options = {
             method: 'GET',
-            url: 'http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip='+ip,
-            // url: 'http://ip.taobao.com/service/getIpInfo.php?ip=180.168.57.238',
+            // url: 'http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip='+ip,
+            url: `http://ip.taobao.com/service/getIpInfo.php?ip=${ip}`,
             // url: 'http://ip.ws.126.net/ipquery?ip=180.168.57.238',
             headers: {
                 // 'Content-Type': application/json,

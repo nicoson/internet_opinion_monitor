@@ -28,6 +28,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'login' });
 });
 
+/* GET login page. */
+router.post('/v1/terror', function(req, res, next) {
+  // console.log(JSON.stringify(req.body));
+  console.log(req);
+});
+
 /* GET home page. */
 router.get('/home', function(req, res, next) {
   res.render('home', { title: 'summary' });

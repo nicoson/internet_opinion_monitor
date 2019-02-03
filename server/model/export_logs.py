@@ -16,8 +16,8 @@ import argparse
 
 ak = "Sj2l3BjGqs47X7fxS_JtrBIsyn2StiV1RI8dppqR"
 sk = "DXVZR5iqJlHw7EiWTYrsAgmcV4pVrN8Tb0vfO_Lg"
-ak = "F92-G4jA5CkT-eibTAtosv6ETVqhpzaGoVtdsTGM"
-sk = "aCQJhOuPEooQGUV56VB7VH6CPFNCzwWZmhBQkA5i"
+# ak = "F92-G4jA5CkT-eibTAtosv6ETVqhpzaGoVtdsTGM"
+# sk = "aCQJhOuPEooQGUV56VB7VH6CPFNCzwWZmhBQkA5i"
 # remoteapi = "http://atnet-apiserver.ava-staging.k8s-xs.qiniu.io/"
 remoteapi = "http://atnet-apiserver.ava-staging.ke-xs.cloudappl.com/"
 # remoteapi = "http://atnet-apiserver-internal.ava-staging.k8s-xs.qiniu.io/"

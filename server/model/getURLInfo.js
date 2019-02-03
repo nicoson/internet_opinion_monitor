@@ -41,12 +41,12 @@ class getURLInfo {
                     // console.log(body);
                     resolve(JSON.parse(body));
                 }
-            })
+            });
         });
     }
 
     getIPInfo(bucket,key,uid) {
-        let bucketKey = bucket + ':' + key;  
+        let bucketKey = bucket + ':' + key;
         // "ava-test:atflow-log-proxy/images/terror-classify-2018-04-30T07-51-19-NSXjmunZFVlzLtnlC1XDTQ==";
         bucketKey = qiniu.util.urlsafeBase64Encode(bucketKey);
         let URI = "https://rs.qbox.me/aget/" + bucketKey + "/user/" + uid;

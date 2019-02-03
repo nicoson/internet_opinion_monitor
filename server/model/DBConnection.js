@@ -2,10 +2,9 @@
 const mysql = require('mysql');
 const URL = require('url');
 
-const HOST = '127.0.0.1';
-// const HOST = 'lego-mysql-0.lego-mysql.ava.svc.cluster.local';
+const HOST = '183.129.229.3';
 const USER = 'root';
-const PASSWORD = 'root';
+const PASSWORD = 'Asd123321@@@';
 const DATABASE = 'yuqing'
 
 function DBConn(){};

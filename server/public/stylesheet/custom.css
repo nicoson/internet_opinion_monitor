@@ -1,0 +1,90 @@
+#wa_custom_frontpage {
+  color: #555;
+}
+#wa_custom_frontpage #wa_custom_job_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#wa_custom_frontpage #wa_custom_job_table th,
+#wa_custom_frontpage #wa_custom_job_table td {
+  border: 1px solid #eee;
+  padding: .5rem 1rem;
+}
+#wa_custom_frontpage #wa_custom_job_table td:last-child {
+  display: flex;
+  justify-content: space-around;
+}
+#wa_custom_frontpage #wa_custom_job_table td:last-child button {
+  padding: .3rem;
+}
+#wa_custom_frontpage #wa_custom_job_table .wa-custom-job-table-link {
+  text-align: center;
+  color: #286ef1;
+}
+#wa_custom_frontpage #wa_custom_job_table .wa-custom-job-table-link:hover {
+  cursor: pointer;
+  color: blue;
+  font-weight: 700;
+}
+.wa-custom-buttonmenu {
+  margin: 1rem 0;
+}
+#wa_custom_setpage {
+  width: 80%;
+  margin: 0 auto;
+}
+#wa_custom_setpage > input {
+  padding: .5rem;
+  margin: 1rem 0;
+  width: 20rem;
+}
+#wa_custom_setpage fieldset {
+  padding: 2rem;
+  margin: 2rem 0;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  color: #555;
+}
+#wa_custom_setpage fieldset legend {
+  font-size: 1.5rem;
+  color: #555;
+}
+#wa_custom_setpage fieldset label:hover,
+#wa_custom_setpage fieldset select:hover {
+  cursor: pointer;
+}
+#wa_custom_setpage fieldset:first-child label {
+  margin: 0 2rem;
+}
+#wa_custom_setpage fieldset:nth-of-type(2) input {
+  width: 100%;
+  padding: .5rem;
+  font-size: 1.2rem;
+}
+#wa_custom_setpage fieldset:nth-of-type(2) > p {
+  font-size: .8rem;
+  margin: 1rem 0;
+  color: #999;
+}
+#wa_custom_setpage fieldset:nth-of-type(3) {
+  display: flex;
+}
+#wa_custom_setpage fieldset:nth-of-type(3) label {
+  padding: .5rem 2rem;
+}
+#wa_custom_setpage fieldset:nth-of-type(4) {
+  display: flex;
+}
+#wa_custom_setpage fieldset:nth-of-type(4) table td {
+  padding: 0.5rem 2rem;
+}
+#wa_custom_setpage fieldset:nth-of-type(4) table td select {
+  width: 100%;
+}
+#wa_custom_setpage #wa_custom_set_buttongroup {
+  text-align: center;
+}
+#wa_custom_setpage #wa_custom_set_buttongroup button {
+  margin: 1rem;
+  width: 7rem;
+}

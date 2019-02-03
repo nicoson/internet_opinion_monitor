@@ -1,5 +1,5 @@
 window.onload = function() {
-    if(APIHOST == undefined) window.APIHOST = '';
+    APIHOST = (typeof(APIHOST) == 'undefined') ? '' : APIHOST;
 
     let conf = {
         min_score:  90,

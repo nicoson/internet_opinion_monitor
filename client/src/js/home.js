@@ -1,7 +1,7 @@
 let DATA = {};
 
 window.onload = function() {
-    if(APIHOST == undefined) window.APIHOST = '';
+    APIHOST = (typeof(APIHOST) == 'undefined') ? '' : APIHOST;
 
     fetch(APIHOST + '/static').then(e => e.json()).then(data => {
         DATA = data;

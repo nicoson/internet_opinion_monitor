@@ -10,14 +10,14 @@ DBConn.createBaseTable('politician');
 DBConn.createBaseTable('detection');
 
 let job = {
-    pulp: true,
-    terror: false,
-    politician: true,
-    detection: true
+    pulp: false,
+    terror: true,
+    politician: false,
+    detection: false
 }
 let rec = new Receiver('./model/');
 
-for(let i=0; i<=0; i++) {
+for(let i=2; i<=6; i++) {
     let start = new Date();
     start.setDate(start.getDate() - i);
     let end = new Date();
